@@ -19,9 +19,12 @@ export class BotonComprar extends HTMLElement {
               }
         </style>
         <div>
-            <button>Comprar Ahora</button>
+            <button><slot name="slot1">Comprar</slot></button>
+            
         </div>
+        <p><slot name="slot1">Reservar</slot></p>
         <p>Gracias por cofiar en nosotros</p>
+        
         `
     }
 
